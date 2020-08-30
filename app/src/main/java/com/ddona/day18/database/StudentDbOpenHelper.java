@@ -8,12 +8,12 @@ import androidx.annotation.Nullable;
 
 public class StudentDbOpenHelper extends SQLiteOpenHelper {
     private static final String STUDENT_DB_NAME = "student.db";
-    private static final int DB_VERSION = 1;
-    private static final String TB_STUDENT = "tb_student";
-    private static final String COL_ID = "_id";
-    private static final String COL_NAME = "_name";
-    private static final String COL_SCORE = "_score";
-    private static final String CREATE_STUDENT_TABLE =
+    public static final int DB_VERSION = 1;
+    public static final String TB_STUDENT = "tb_student";
+    public static final String COL_ID = "_id";
+    public static final String COL_NAME = "_name";
+    public static final String COL_SCORE = "_score";
+    public static final String CREATE_STUDENT_TABLE =
             "CREATE TABLE " + TB_STUDENT + "("
                     + COL_ID + " integer primary key autoincrement,"
                     + COL_NAME + " text,"
